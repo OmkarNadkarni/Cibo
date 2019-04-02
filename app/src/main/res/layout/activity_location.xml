@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_weight="2"
+    android:paddingTop="10dp">
+
+
+    <ImageView
+        android:id="@+id/imglocate"
+        android:layout_width="wrap_content"
+        android:src="@drawable/location"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        />
+    ImageView>
+    <TextView
+        android:id="@+id/tvlocate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/imglocate"
+        android:layout_toRightOf="@+id/imglocate"
+        android:text="PANJIM CACULO MALL"
+        android:paddingLeft="10dp"
+        />
+    TextView>
+    <TextView
+        android:id="@+id/tvlocate2"
+        android:layout_width="match_parent"
+        android:text="Chibo,Caculo Mall,5th floor,St.Inez Goa."
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvlocate"
+        android:layout_alignLeft="@+id/tvlocate"
+        android:paddingLeft="10dp"
+        />
+    TextView>
+    <TextView
+        android:id="@+id/tvlocate3"
+        android:layout_width="match_parent"
+        android:text="403001"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvlocate2"
+        android:layout_alignLeft="@+id/tvlocate2"
+        android:paddingLeft="10dp"/>
+</RelativeLayout>

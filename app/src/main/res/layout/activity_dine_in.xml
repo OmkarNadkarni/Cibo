@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="4"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFC107"
+        android:layout_weight="0.5"
+        android:minHeight="?attr/actionBarSize"
+
+        app:title="Cibo">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:padding="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/itemnametv"
+            android:layout_weight="1"
+            android:text="Item Name"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/itempricetv"
+            android:layout_weight="1"
+            android:text="Price"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/totalitempricetv"
+            android:layout_weight="1"
+            android:text="Qty"
+            android:gravity="center"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:text="Total Price"
+
+            />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.7"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/dineinRV">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:weightSum="3"
+        >
+
+        <Button
+            android:id="@+id/btcallwaiter"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:padding="15dp"
+            android:layout_height="match_parent"
+            android:text="Call Waiter"
+            android:background="@drawable/shapesquare"
+            android:drawableTop="@drawable/alertwaiter"
+            android:onClick="callwaiter"
+            />
+
+        <Button
+            android:id="@+id/btbillsplit"
+            android:padding="15dp"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Split Bill"
+            android:drawableTop="@drawable/splitbill"
+            android:background="@drawable/shapesquare"
+            android:onClick="splitBill"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

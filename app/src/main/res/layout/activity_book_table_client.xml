@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#FFC107"
+        android:minHeight="?attr/actionBarSize"
+        app:title="Cibo"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Select Time"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+    <ToggleButton
+        android:id="@+id/timetb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textOn="Lunch"
+        android:textOff="Dinner"
+        android:onClick="setTime"
+        android:background="@drawable/takeawaybuttonshape"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lunchRG">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:layout_gravity="center"
+            android:text="12:00 pm"
+            android:id="@+id/twelve"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="01:00 pm"
+            android:id="@+id/one"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="02:00 pm"
+            android:id="@+id/two"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dinnerRG">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="08:00 pm"
+            android:checked="true"
+            android:id="@+id/seven"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="09:00 pm"
+            android:id="@+id/eight"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="10:00 pm"
+            android:id="@+id/nine"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Select Number of people"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shapesquare"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:id="@+id/ovsubiv"
+            android:onClick="subDiner"
+            android:src="@drawable/subtractiv" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/dinerstv"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="1" />
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/addiv"
+            android:id="@+id/ovaddiv"
+            android:onClick="addDiner"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/conditions"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/booktableclient_name_et"
+        android:hint="Name of the Customer"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/booktablebt"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:background="@drawable/shape"
+        android:onClick="confirmTable"
+        android:layout_marginTop="15dp"
+        />
+
+
+</LinearLayout>

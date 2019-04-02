@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CIBO</string>
+    <string name="action_settings">Settings</string>
+    <string name="stylist_text">
+        Sign up makes you agree to our <b>Terms</b> and <b>Privacy policies</b>
+    </string>
+    <string name="logo_desc">App logo</string>
+    <string name="conditions">Terms And Conditions</string>
+    <string name="title_activity_maplocation">AIzaSyBqRJOhbj6ecmyYHfJ_sSpYgQbxMn6p1sk</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="5">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#FFC107"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:title="Cibo">
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/imgmain" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="4"
+
+        >
+
+        <TableRow
+            android:weightSum="3"
+            android:layout_weight="2"
+            >
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="15dp"
+                android:layout_height="match_parent"
+                android:text="Book A Table"
+                android:background="@drawable/shapesquare"
+                android:drawableTop="@drawable/table"
+                android:id="@+id/btbooktable"
+                android:onClick="startactivity"
+                />
+
+            <Button
+                android:padding="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Locate Us"
+                android:drawableTop="@drawable/location"
+                android:background="@drawable/shapesquare"
+                android:id="@+id/btlocation"
+                android:onClick="startactivity"
+                />
+            <Button
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Menu"
+                android:drawableTop="@drawable/menu"
+                android:background="@drawable/shapesquare"
+                android:id="@+id/btmenu"
+                android:onClick="startactivity"
+                />
+        </TableRow>
+
+
+        <TableRow
+            android:weightSum="3"
+            android:layout_weight="2"
+            >
+            <Button
+                android:padding="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:drawableTop="@drawable/building"
+                android:layout_height="match_parent"
+                android:text="Dine In"
+                android:background="@drawable/shapesquare"
+                android:id="@+id/btdinein"
+                android:onClick="DineInActivity"
+                />
+
+            <Button
+                android:padding="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:drawableTop="@drawable/takeaway"
+                android:layout_height="match_parent"
+                android:text="Take Away"
+                android:background="@drawable/shapesquare"
+                android:id="@+id/bttakeaway"
+                android:onClick="startactivity"
+                />
+            <Button
+                android:padding="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Offers"
+                android:drawableTop="@drawable/offers"
+                android:background="@drawable/shapesquare"
+                android:id="@+id/btoffers"
+                android:onClick="startactivity"
+                />
+        </TableRow>
+
+
+
+
+
+
+    </TableLayout>
+</LinearLayout>

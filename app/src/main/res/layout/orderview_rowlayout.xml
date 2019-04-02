@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/ovitemnametv"
+        android:layout_weight="1"
+
+        android:text="name"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ovitempricetv"
+        android:layout_weight="1"
+
+        android:gravity="center"
+        android:text="name"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/shapesquare"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:id="@+id/ovsubiv"
+            android:onClick="subme"
+            android:src="@drawable/subtractiv" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:id="@+id/ovqtytv"
+            android:gravity="center"
+
+            android:text="1" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/addiv"
+            android:id="@+id/ovaddiv"
+            android:onClick="addme"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ovtotalitempricetv"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="name"
+        />
+
+</LinearLayout>

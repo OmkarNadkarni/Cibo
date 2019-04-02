@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#FFC107"
+        android:minHeight="?attr/actionBarSize"
+        app:title="Cibo"
+        >
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:padding="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/itemnametv"
+            android:layout_weight="1"
+            android:text="Item Name"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/itempricetv"
+            android:layout_weight="1"
+            android:text="Price"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/totalitempricetv"
+            android:layout_weight="1"
+            android:text="Qty"
+            android:gravity="center"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:text="Total Price"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="7">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/itemslv"
+            android:layout_weight="4.5"
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:id="@+id/totalpricetv"
+            android:text="Total Price"
+            android:textAlignment="viewEnd"
+            android:paddingRight="15dp"
+            android:textSize="20dp"
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:id="@+id/deltypetv"
+            android:text="Type- Take Away"
+            android:paddingRight="15dp"
+            android:textSize="20dp"
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:id="@+id/deladdtv"
+            android:text="Address:"
+            android:paddingRight="15dp"
+            android:textSize="20dp"
+            />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="place order"
+                android:background="@color/colorPrimary"
+                android:id="@+id/placeorderbt"
+                android:onClick="placeordermethod"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>

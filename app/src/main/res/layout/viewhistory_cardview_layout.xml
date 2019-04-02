@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp"
+    android:id="@+id/viewhistory_CV"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datetime"
+        android:padding="5dp"
+        android:text="Date"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VR_datetime"
+        android:padding="5dp"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@id/datetime"
+        android:text="Date"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Type"
+        android:id="@+id/type"
+        android:layout_below="@id/datetime"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VR_type"
+        android:padding="5dp"
+        android:layout_alignStart="@id/VR_datetime"
+        android:layout_toRightOf="@id/type"
+        android:layout_below="@id/VR_datetime"
+        android:text="adafas"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grand Total"
+        android:id="@+id/grandtotal"
+        android:padding="5dp"
+        android:layout_below="@id/type"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VR_grandtotal"
+        android:padding="5dp"
+        android:layout_alignStart="@id/VR_datetime"
+        android:layout_toRightOf="@id/grandtotal"
+        android:layout_below="@id/VR_type"
+        android:text="adafas"
+        />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

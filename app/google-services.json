@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "197354238912",
+    "firebase_url": "https://ciboapp-bc809.firebaseio.com",
+    "project_id": "ciboapp-bc809",
+    "storage_bucket": "ciboapp-bc809.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197354238912:android:ef4fb30318e506de",
+        "android_client_info": {
+          "package_name": "com.example.omkar.ciboclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197354238912-e13b6mvm1cpmis0t263ik580c8ts69ja.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.omkar.ciboclient",
+            "certificate_hash": "17fbfa5cc7288097ea7d5afddddf1944546d7c90"
+          }
+        },
+        {
+          "client_id": "197354238912-kqq0bjmn11j3e8dhpfikl6kaisov951u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChY2Hp7t9TaTBfwtJJQHPXfW4xOf9NxiI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197354238912-kqq0bjmn11j3e8dhpfikl6kaisov951u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFFFF"
+        tools:context=".Login">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:src="@drawable/cibo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/img"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernamec"
+            android:hint="Username"
+            android:text="omkarnadkarni333@gmail.com"
+            android:inputType="text"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordc"
+            android:hint="Password"
+            android:text="omkarnadkarni"
+            android:inputType="textPassword"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginc"
+            android:text="Login"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:background="@drawable/shape"
+            android:onClick="signin"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgotpasswordc"
+            android:text="Forgot password?"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="@id/forgotpasswordc"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create an account.Sign up"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center"
+            android:id="@+id/signupc"/>
+
+
+
+
+
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/signinpb"
+        />
+
+</RelativeLayout>
